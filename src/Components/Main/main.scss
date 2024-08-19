@@ -1,0 +1,88 @@
+:root {
+    --hoverColor: #019c74; 
+    --contactButtonColor: #019c74; 
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+    --cardHover: rgb(255, 255, 255);
+}
+
+// Variables
+$primary-color: #019c74; 
+$secondary-color: #000; 
+$box-shadow-color: rgba(0, 0, 0, 0.1);
+$hover-shadow-color: rgba(0, 0, 0, 0.2); 
+
+// Styles
+.aboutUsSection {
+    padding: 4rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsContainer {
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.aboutTitle {
+    color: $primary-color;
+    font-size: 3rem;
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+}
+
+.aboutDescription {
+    color: $secondary-color;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.infoBoxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+    .infoBox {
+        flex: 1;
+        padding: 2rem;
+        box-shadow: 0 4px 8px $box-shadow-color;
+        border-radius: 8px;
+        background-color: #fff;
+        transition: all 0.3s ease; 
+
+        .infoTitle {
+            color: $primary-color;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .infoText {
+            color: $secondary-color;
+            font-size: 2rem;
+        }
+
+        &:hover {
+            box-shadow: 0 8px 16px $hover-shadow-color; 
+            transform: scale(1.05); 
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .infoBoxes {
+        flex-direction: column;
+        align-items: center;
+
+        .infoBox {
+            margin-bottom: 1.5rem;
+        }
+    }
+}

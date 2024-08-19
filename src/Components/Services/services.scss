@@ -1,0 +1,60 @@
+:root {
+    --primary-color: #019c74; // Green color
+    --secondary-color: #000; // Black color
+    --background-color: #f4f4f4;
+}
+
+// Variables
+$primary-color: #019c74; // Green color
+$secondary-color: #000; // Black color
+$background-color: #f4f4f4;
+
+// Styles
+.services {
+    background-color: $background-color;
+    padding: 4rem 2rem;
+}
+
+.servicesContent {
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.servicesTitle {
+    color: $primary-color;
+    font-size: 3rem;
+    margin-top: 5rem; 
+    margin-bottom: 2rem;
+}
+
+.servicesList {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    .serviceItem {
+        background-color: #fff;
+        padding: 2rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+
+        .serviceTitle {
+            color: $primary-color;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .serviceDescription {
+            color: $secondary-color;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .servicesList {
+        flex-direction: column;
+        align-items: center;
+    }
+}

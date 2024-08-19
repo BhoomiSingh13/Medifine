@@ -1,0 +1,84 @@
+:root {
+    --primary-color: #019c74;
+    --secondary-color: #000;
+    --background-color: #f4f4f4;
+    --form-background: #fff;
+    --form-border: #ddd;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contactContainer {
+    max-width: 500px;
+    margin: 30rem ; 
+    padding: 1rem; /* Reduced padding */
+    background-color: var(--form-background);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem; /* Reduced margin */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced gap */
+}
+
+.formContainer {
+    padding: 1rem; /* Reduced padding */
+    border: 1px solid var(--form-border);
+    background-color: var(--form-background);
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* Reduced gap */
+    width: 100%;
+    height: auto; /* Let the height adjust based on content */
+}
+
+label {
+    margin-bottom: 0.5rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 0.5rem; /* Reduced padding */
+    border: 1px solid var(--form-border);
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduced font size */
+}
+
+textarea {
+    resize: vertical;
+    min-height: 60px; /* Reduced min-height */
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.5rem; /* Reduced padding */
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Reduced font size */
+    transition: background-color 0.3s;
+    align-self: flex-start; /* Aligns button to the left */
+}
+
+button:hover {
+    background-color: var(--primary-color);
+}
+
+p {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-top: 1rem;
+}

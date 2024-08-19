@@ -1,0 +1,19 @@
+:root {
+    --footer-bg-color: #019c74; /* Green color for the footer */
+    --footer-text-color: #fff; /* White text color */
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 0.875rem;
+}
